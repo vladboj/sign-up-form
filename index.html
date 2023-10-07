@@ -4,22 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="flex-container">
       <div class="left-side">
-        <!-- <img src="./assets/kate-laine-unsplash.jpg" alt="picture-of-tomatoes" /> -->
+        <div class="logo-container">
+          <img src="./assets/knife.svg" alt="knife-logo" class="logo" />
+          <p class="logo-text">TOMATOES.</p>
+        </div>
+        <p class="credits">Photo by Kate Laine on Unsplash</p>
       </div>
       <div class="right-side">
         <div class="top-section">
-          <p>This is the most amazing non-real website about tomatoes.</p>
-          <p>Sign up now to get started</p>
+          <p>
+            This is the most amazing non-real website about tomatoes and will
+            change your LIFE.
+          </p>
+          <p>Sign up now to become a <em>WHOLE NEW PERSON!!!</em></p>
         </div>
         <div class="mid-section">
-          <form action=""></form>
+          <p class="form-title">Let's do this!</p>
+          <form>
+            <div class="left-form">
+              <div class="input">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required />
+              </div>
+              <div class="input">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+              <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+            </div>
+            <div class="right-form">
+              <div class="input">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required />
+              </div>
+              <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="input">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
         </div>
         <div class="bottom-section">
-          <button>Create Account</button>
+          <button type="submit" class="create-account">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>

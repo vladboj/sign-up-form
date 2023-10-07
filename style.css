@@ -1,5 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .flex-container {
   display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+
+.left-side {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 33%;
+  background-image: url(./assets/kate-laine-unsplash.jpg);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+.logo {
+  width: 15%;
+}
+
+.logo-text {
+  font-size: xx-large;
+  font-family: "Noto Sans", "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.credits {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+  flex-grow: 3;
+  flex-basis: 66%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 30px;
+  padding-left: 50px;
+  background-color: rgba(240, 240, 240, 0.5);
+  font-size: large;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mid-section {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: 500;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+form {
+  display: flex;
+  gap: 50px;
+  padding-left: 50px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 20px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: small;
+  color: rgb(100, 100, 100);
+}
+
+input {
+  padding: 3px 7px 3px 7px;
+}
+
+input:focus {
+  box-shadow: 3px 3px 7px rgba(156, 156, 156, 0.5);
+}
+
+.bottom-section {
+  flex-basis: 33%;
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.create-account {
+  padding: 7px 25px 7px 25px;
+  border-radius: 7px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(203, 15, 15, 0.7);
+  box-shadow: 3px 3px 3px rgba(169, 169, 169, 0.5);
+}
+
+.create-account:hover {
+  color: rgba(203, 15, 15, 0.7);
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(203, 15, 15);
 }
