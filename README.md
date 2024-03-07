@@ -1,7 +1,6 @@
 # HTML Forms Learning Project
 
-**This is a simple HTML and CSS project created to learn the basics of HTML Forms.**
-
+**This is a simple HTML and CSS website created to learn the basics of HTML Forms.**
 
 ## Accessing the Project
 
